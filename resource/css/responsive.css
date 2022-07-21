@@ -1,0 +1,48 @@
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #content {
+        width: 100%;
+        margin-bottom: 30px;
+        padding-right: 0;
+    }
+
+    aside {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .card {
+        width: calc(100% / 2 - 1.3rem);
+    }
+}
+
+@media screen and (max-width: 767.9px) {
+    .container {
+        max-width: 540px;
+    }
+    .card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar .navbar-nav {
+        display: none;
+    }
+
+    .navbar .navbar-toggle {
+        display: block;
+    }
+}
