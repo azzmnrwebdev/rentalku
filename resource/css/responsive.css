@@ -16,6 +16,15 @@
 
     aside {
         width: 100%;
+        padding-left: 0;
+    }
+
+    #contact {
+        padding-bottom: 0;
+    }
+
+    #lokasi {
+        padding-bottom: 5rem;
     }
 }
 
@@ -23,26 +32,58 @@
     .container {
         max-width: 720px;
     }
+
     .card {
         width: calc(100% / 2 - 1.3rem);
     }
+
+    .sliders .slide {
+        padding: 8px 13px;
+    }
+
+    .slide span {
+        font-size: 18px;
+    }
+
+    .btn-sliders span {
+        height: 14px;
+        width: 14px;
+    }
 }
 
-@media screen and (max-width: 767.9px) {
-    .container {
-        max-width: 540px;
-    }
-    .card {
-        width: 100%;
+@media screen and (max-width: 768px) {
+    .sliders .images {
+        height: 35vh;
     }
 }
 
 @media screen and (max-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
     .navbar .navbar-nav {
         display: none;
     }
 
     .navbar .navbar-toggle {
         display: block;
+    }
+
+    .sliders .images {
+        height: 25vh;
+    }
+
+    .sliders .slide {
+        display: none;
+    }
+
+    .btn-sliders span {
+        height: 12px;
+        width: 12px;
     }
 }

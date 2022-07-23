@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rentalku</title>
+    <title>Rentalku | Platform Rental Mobil Terbaik di Indonesia</title>
     <link rel="stylesheet" href="resource/css/style.css">
     <link rel="stylesheet" href="resource/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -18,12 +19,27 @@
 </head>
 
 <body>
-    <!-- header untuk menampilkan judul dan navigasi -->
+    <!-- header untuk menampilkan image sliders, judul dan navigasi -->
     <header>
-        <div class="carousel">
-            <h1>Rentalku</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio architecto excepturi ab eaque. Sint,
-                velit!</p>
+        <div class="sliders">
+            <div class="images">
+                <div class="slide-img slide-1"></div>
+                <div class="slide-img slide-2"></div>
+                <div class="slide-img slide-3"></div>
+                <div class="slide-img slide-4"></div>
+            </div>
+            <div onclick="navigation(-1)" class="slide left">
+                <span>&#10094;</span>
+            </div>
+            <div onclick="navigation(1)" class="slide right">
+                <span>&#10095;</span>
+            </div>
+            <div class="btn-sliders">
+                <span onclick="btnSlide(1)"></span>
+                <span onclick="btnSlide(2)"></span>
+                <span onclick="btnSlide(3)"></span>
+                <span onclick="btnSlide(4)"></span>
+            </div>
         </div>
 
         <nav class="navbar">
@@ -31,7 +47,7 @@
                 <div class="navbar-brand">Rentalku</div>
 
                 <button class="navbar-toggle" type="button">
-                    <span class="navbar-toggle-icon"><i class="fa-solid fa-bars-staggered"></i></span>
+                    <span class="navbar-toggle-icon"><i class="fa-solid fa-bars"></i></span>
                 </button>
 
                 <ul class="navbar-nav">
@@ -85,6 +101,9 @@
                 </div>
 
                 <div class="row" id="list-product"></div>
+                <center>
+                    <button class="btn btn-primary">Load more</button>
+                </center>
             </article>
 
             <article id="blog">
@@ -94,31 +113,84 @@
                 </div>
 
                 <div class="row" id="list-blog"></div>
+                <center>
+                    <button class="btn btn-primary">Load more</button>
+                </center>
+            </article>
+
+            <article id="contact">
+                <div class="title">
+                    <h2>Hubungi Kami</h2>
+                    <p>Anda dapat mengirim pesan kepada kami</p>
+                </div>
+
+                <form action="" method="post">
+                    <div class="mb-3">
+                        <label for="fullname" class="form-label">Fullname</label>
+                        <input type="text" name="fullname" id="fullname" class="form-control"
+                            placeholder="Nama Lengkap Anda..." autocomplete="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="fullname" class="form-label">Email</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Email Anda..."
+                            autocomplete="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="fullname" class="form-label">Subject</label>
+                        <input type="text" name="subject" id="subject" class="form-control"
+                            placeholder="Subject Anda..." required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="fullname" class="form-label">Message</label>
+                        <textarea name="message" id="description" class="form-control" cols="30" rows="10"
+                            placeholder="Pesan Anda..." required></textarea>
+                    </div>
+
+                    <button class="btn btn-primary">Kirim 🚀</button>
+                </form>
             </article>
         </div>
 
-        <!-- bagian kanan untuk sidebar konten profile -->
+        <!-- bagian kanan untuk sidebar konten profile dan contact -->
         <aside>
-            <article>
+            <article id="profile">
                 <div class="title">
                     <h2>Profile Saya</h2>
+                    <p>Frontend Web Developer</p>
                 </div>
 
                 <div class="card-profile">
                     <div class="card-body">
                         <h3 class="card-title text-center">Azzmnrwebdev</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                            consequatur odit mollitia a repellat magnam sapiente vitae repellendus consectetur
-                            totam.</p>
+                        <p class="card-text">
+                            <strong>Fullname:</strong> Muhammad Azzam Nur Alwi Mansyur
+                            <br /><strong>Pekerjaan:</strong> Full Stack Web Developer
+                            <br /><strong>Hobby:</strong> Coding, Badminton and Swimming
+                            <br /><strong>Skills:</strong> HTML, CSS, JS, PHP, Bootstrap, Tailwindcss, Laravel and React
+                            JS
+                            <br /><strong>University:</strong> Sekolah Tinggi Teknologi Terpadu Nurul Fikri
+                        </p>
                     </div>
                 </div>
+            </article>
+
+            <article id="lokasi">
+                <div class="title">
+                    <h2>Lokasi Kami</h2>
+                    <p>Inilah alamat kantor kami</p>
+                </div>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.66646696068!2d106.82496411464764!3d-6.1753870622325975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sMonumen%20Nasional!5e0!3m2!1sid!2sid!4v1658571420953!5m2!1sid!2sid"
+                    width="100%" height="300" class="gmaps" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </article>
         </aside>
     </main>
 
     <!-- untuk footer -->
     <footer>
-
+        2021 Hak Cipta Terpelihara PT. Rentalku Digital Indonesia
     </footer>
 
     <script src="resource/js/script.js"></script>
