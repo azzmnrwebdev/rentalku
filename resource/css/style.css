@@ -369,6 +369,13 @@ aside {
     overflow: hidden;
 }
 
+.card-profile .card-body img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-bottom: 0.35rem;
+}
+
 .gmaps {
     border: 0;
     border-radius: 10px;
