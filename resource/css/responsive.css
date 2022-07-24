@@ -67,7 +67,23 @@
     }
 
     .navbar .navbar-nav {
-        display: none;
+        position: absolute;
+        left: 0;
+        height: 50vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #f8fafc;
+        width: 100%;
+        z-index: -1;
+        margin-top: 45px;
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    .navbar .navbar-nav.slide {
+        opacity: 1;
+        transform: translateY(0);
     }
 
     .navbar .navbar-toggle {

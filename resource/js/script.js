@@ -143,7 +143,20 @@ blogs.forEach((i) => {
 });
 
 // Navigation bar
-const toggleBtn = document.querySelector(".navbar-toggle");
+const menuToggle = document.querySelector(".navbar-toggle");
+const nav = document.querySelector(".navbar .navbar-nav");
+let navIcon = document.querySelector(".navbar-toggle-icon");
+let icon = navIcon.querySelector(".fa-bars");
+
+menuToggle.addEventListener("click", function () {
+  nav.classList.toggle("slide");
+
+  if (icon.classList.contains("fa-bars")) {
+    icon.classList.replace("fa-bars", "fa-xmark");
+  } else {
+    icon.classList.replace("fa-xmark", "fa-bars");
+  }
+});
 
 // Image slider
 let indexValue = 1;
