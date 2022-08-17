@@ -4,7 +4,7 @@
 
 ### Deskripsi: 
 
-Website ini dibuat dari Tugas Akhir kelas Belajar Dasar Web Programming - Dicoding. Tema saya merupakan sebuah web rental mobil, seolah-olah tampilan nya seperti web rental mobil pada umumnya. Website ini dibangun hanya dengan html, css dan js, tanpa framework juga sudah responsive disemua perangkat lunak. Terdapat component apa saja? yaitu:
+Website ini dibuat dari Tugas Akhir kelas Belajar Dasar Web Programming - Dicoding. Tema saya merupakan sebuah web rental mobil, seolah-olah tampilan nya seperti web rental mobil pada umumnya. Website ini dibangun hanya dengan html, css dan js, tanpa framework juga sudah responsive disemua perangkat lunak. Terdapat beberapa component, yaitu:
 
 * Image Slider
 * Navigation Bar
