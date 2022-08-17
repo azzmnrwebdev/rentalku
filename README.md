@@ -1,10 +1,13 @@
 ## _Website Rentalku_
 
-> Muhammad Azzam Nur Alwi Mansyur
+> Created by: Muhammad Azzam Nur Alwi Mansyur
 
 ### Deskripsi: 
 
-Website ini dibuat dari Tugas Akhir kelas Belajar Dasar Web Programming - Dicoding. Tema saya merupakan sebuah web rental mobil, seolah-olah tampilan nya seperti web rental mobil pada umumnya. Website ini dibangun hanya dengan html, css dan js, tanpa framework juga sudah responsive disemua perangkat lunak. Terdapat beberapa component, yaitu:
+Website ini dibuat dari Ujian Akhir Course Dicoding - Belajar Dasar Web Programming. Web ini dibangun dengan html, css dan js, dilarang menggunakan bootstrap. Tema bebas tetapi saya memilih Rental Mobil, website ini juga sudah responsive disemua perangkat lunak. Kunjungi: [Demo Aplikasi](https://azzmnrwebdev.github.io/rentalku/)
+
+### Component:
+Terdapat beberapa component, yaitu:
 
 * Image Slider
 * Navigation Bar
