@@ -16,15 +16,6 @@ Website ini dibuat dari Tugas Akhir kelas Belajar Dasar Web Programming - Dicodi
 * Footer
 
 ### Screenshot:
-[laptop]: resource/img/screenshots/laptop.jpg "Ketika lebar layar di ukuran Laptop"
-[tablet]: resource/img/screenshots/tablet.jpg "Ketika lebar layar di ukuran Tablet"
-[phone]: resource/img/screenshots/phone.jpg "Ketika lebar layar di ukuran Handphone"
+[screenshot]: resource/img/screenshots/screenshot.jpg
 
-#### Laptop (width: 1440px)
-![alt text][laptop]
-
-#### Tablet (width: 768px)
-![alt text][tablet]
-
-#### Phone (width: 425px)
-![alt text][phone]
+![alt text][screenshot]
