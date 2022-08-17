@@ -77,13 +77,11 @@
         width: 100%;
         z-index: -1;
         margin-top: 45px;
-        transform: translateY(-100%);
-        opacity: 0;
+        transform: translateX(-100%);
     }
 
     .navbar .navbar-nav.slide {
-        opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
     }
 
     .navbar .navbar-toggle {
